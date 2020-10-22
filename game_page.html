@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths Warrior</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="icon" href="Maths Warrior.png" type="image/x-icon">
+<script src="game_play.js"></script>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body class="body-background" style="margin: 0; padding: 0; background:  #EF761E; font-size: 16px; color: white; font-family: sans-serif; font-weight: 300;">
+    <h4 id="player1_name" style="color: brown;">PLayer 1:</h4> <span id="player1_score" style="color: brown;"></span>
+    <div style="text-align: right;">
+        <img src="Maths Warrior.png" height="50" width="50">
+    </div>
+    <h4 id="player2_name" style="color: brown;">PLayer 2:</h4> <span id="player2_score" style="color: brown;"></span>
+<div class="container">
+	<center>
+        <h1 style="color: brown;">Maths Warrior</h2>
+        <h3 id="player_question" style="color: brown;">Question turn-</h3>
+        <h3 id="player_answer" style="color: brown;">Answer turn-</h3>
+        <div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+        <label>Send You Question: <b style="color: rgb(129, 45, 45);">Enter numbers for the opponent to do calculations.</b></label>
+        <input type="text" class="form-control" placeholder="Number 1" id="number_1">
+        <br>
+        <input type="text" class="form-control" placeholder="Number 2" id="number_2">
+        <br>
+        <button onclick="send()" class="btn-success" style="width: 30%; color: brown;">Send</button>
+	</center>
+</div>
+
+</body>
+</html>
