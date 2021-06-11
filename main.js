@@ -1,3 +1,19 @@
+//firebase connection
+var firebaseConfig = {
+  apiKey: "AIzaSyCxYVChREHufmbsKJYOcg7vCuoWWau0tHk",
+  authDomain: "newagent-xrsgcn.firebaseapp.com",
+  databaseURL: "https://newagent-xrsgcn-default-rtdb.firebaseio.com",
+  projectId: "newagent-xrsgcn",
+  storageBucket: "newagent-xrsgcn.appspot.com",
+  messagingSenderId: "23344131382",
+  appId: "1:23344131382:web:8cedd37d71660f3ed75797",
+  measurementId: "G-GQJSNRN0D5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -8,20 +24,38 @@ function myFunction() {
     }
   }
 
-  function login(){
-//alert("Login button Clicked");
-name1 = document.getElementById("name").value;
-name2 = document.getElementById("email").value;
-name3 = document.getElementById("uname").value;
-console.log(name1,name2,name3);
+  //feedback code
+  function send() {
+    uname = document.getElementById("uname").value;
+    ufeedback = document.getElementById("feedback").value;
+    emailid = document.getElementById("emailid").value;
+    mnumber = document.getElementById("mnumber").value;
+    firebase.database().ref("/").child(uname).update({
+      feedback : ufeedback,
+      email : emailid,
+      mobile : mnumber
+
+    });
+
+    document.getElementById("uname").value = "";
+    document.getElementById("feedback").value = "";
+    document.getElementById("emailid").value = "";
+    document.getElementById("mnumber").value = "";
+
+    window.alert("Feedback submitted sucessfully");
+    /*firebase.database().ref(room_name).push({
+      name:uname,
+      message:feedback,
+     });
+     */
   }
 
 
-  /*Downloaded from https://www.codeseek.co/ovdojoey/css-gift-opening-pgozGX */
+  /*Downloaded from https://www.codeseek.co/ovdojoey/css-gift-opening-pgozGX  for suprise box*/
 
 var to = 'Suprise!';
 var gift_url = 'http://www.amazon.com/gp/product/B00X4WHP5E/ref=ods_xs_ae_shurl?tag=googhydr-20&hvadid=74652194316&hvpos=1t1&hvexid=&hvnetw=g&hvrand=7560558939874219351&hvpone=&hvptwo=&hvqmt=b&hvdev=c&ref=pd_sl_2vatdqwe3p_b';
-var gift_image_url = 'https://media-exp3.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_200_200/0/1612205615891?e=2159024400&v=beta&t=J9qbDyzP2uv1lE1Xb_ieBaWwgeT-u52Mf-4ACuHP_p8';
+var gift_image_url = 'om.jpeg';
 
 
 

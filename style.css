@@ -66,6 +66,32 @@ input
 }
 
 
+/*FOR alert*/
+.alert {
+    padding: 5px;
+    background-color: #FFA500;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .alert:hover {
+    background-color:green;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+
 /*Downloaded from https://www.codeseek.co/ovdojoey/css-gift-opening-pgozGX */
 .above-fold {
     height: 50vh;
@@ -251,7 +277,7 @@ input
             transform: translateZ(-2px) translateY(50px);
   }
   .present-box > .side.top .to:after {
-    content: 'Merry Christmas';
+    content: 'SUPRISE';
     display: inline-block;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
