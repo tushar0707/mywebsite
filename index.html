@@ -1,47 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>All in One</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Pooja Kamble</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<header class= "nav">
-    <div class="topnav" id="myTopnav">
-        <!--This is navigation--> 
-        <a href="index.html" class="active"> Home_Tushar</a>
-        <a href="login.html"> Become a Member</a>
-        <a href="https://www.google.com"> About Us</a>
-        <a href="https://www.google.com"> Contact us</a>  
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>  
-    </div>    
-    <hr width="2000px">
-</header>
 
-<body>    
+<body>
 
-    <section>
-        <table border = "10px">
-            <tr>
-                <th>Search Engine</th>
-                <th>Social Networking</th>
-                <th>News</th>
-                <th>Games</th>
-                <th>Videos</th>
-            </tr>
-        </table>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Pooja Kamble</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#welcome">HOME</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#writings">WRITINGS</a></li>
+                <li><a href="#aboutMe">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <section id="welcome">
+        <img src="pooja.jpg" class="profile img-circle">
+        <h1>I Am
+            <br>
+            <span id="name">Mrs. Pooja Tushar Kamble</span>
+        </h1>
+        <h2></h2>
     </section>
-    <div style="border: 100;" style="background-color: aqua;">
 
-        <iframe url= "https://www.google.com"></iframe>
-    </div>
-    
+
+    <section id="bio">
+        <h1>Hi!</h1>
+        <div class="line"></div>
+        <p></p>
+    </section>
+<hr>
+    <section id="suprise">
+        <h1>Suprise!</h1>
+        <div class="line"></div>
+        <p></p>
+    </section>
+
+    <hr>
+    <section id="videos">
+        <h1>Videos</h1>
+        <div class="line"></div>
+        <br>
+        <iframe src="https://www.youtube.com/embed/OM6XIICm_qo" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            class="video1" height="100" width='100'> </iframe>
+        <br>
+        <br>
+
+        <iframe height="100" width='100' src="https://www.youtube.com/embed/J8hzJxb0rpc" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            class="video2"></iframe>
+    </section>
+
+    <hr>
+    <section id="work" style="width: 100%;">
+        <h1>WORK</h1>
+        <div class="line"></div>
+    </section>
+
+    <hr>
+
+    <section id="writings">
+        <h1 >WRITINGS</h1>
+    </section>
+    <hr>
+
+    <section id="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin"
+            height="300" width='300' frameborder="0" class='map2'></iframe>
+        </section>
+        <hr>
+        <section id='contact'>
+        <div class="contact_1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <a href="mailto:poojakisan2@gmail.com?Subject=WEBSITE | ">
+                <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;poojakisan2@gmail.com</h5>
+            </a>
+
+            <a href="#">
+                <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a>
+        </div>
+
+        <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form>
+                <span>Name : </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+                <br><br>
+                <span>Comment : </span><input type="text" name="comment" required>
+                <br><br>
+                <input type="submit" value="submit" class="btn btn-success">
+            </form>
+        </div>
+
+    </section>
+
+    <script async src="https://drv.tw/inc/wd.js"></script>
 </body>
 
-
 </html>
-
