@@ -16,11 +16,6 @@ body
     padding: 50px;
     text-align: center;
 }
-#suprise {
-  font-family: 'Cinzel Decorative', cursive;
-  padding: 50px;
-  text-align: center;
-}
 h1 {
     font-size: 40px;
     font-family: sans-serif;
@@ -50,7 +45,8 @@ h1 {
 
 #videos iframe
 {
-    width: 50%;
+    width: 80%;
+    height: 100%;
 }
 #maps iframe
 {
