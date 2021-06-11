@@ -72,8 +72,8 @@ input
 
 /*Downloaded from https://www.codeseek.co/ovdojoey/css-gift-opening-pgozGX */
 .above-fold {
-    height: 50%;
-    width: 50%;
+    height: 50vh;
+    width: 50vw;
     padding: 0;
     margin: 0;
     -webkit-perspective: 800px;
@@ -255,7 +255,7 @@ input
             transform: translateZ(-2px) translateY(50px);
   }
   .present-box > .side.top .to:after {
-    content: 'SUPRISE !!';
+    content: 'Merry Christmas';
     display: inline-block;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
