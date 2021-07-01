@@ -27,7 +27,7 @@ function myFunction() {
   //feedback code
   function send() {
     uname = document.getElementById("uname").value;
-    ufeedback = document.getElementById("feedback").value;
+    ufeedback = document.getElementById("ufeedback").value;
     emailid = document.getElementById("emailid").value;
     mnumber = document.getElementById("mnumber").value;
     firebase.database().ref("/").child(uname).update({
