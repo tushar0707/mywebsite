@@ -34,7 +34,6 @@ function myFunction() {
       feedback : ufeedback,
       email : emailid,
       mobile : mnumber
-
     });
 
     document.getElementById("uname").value = "";
@@ -51,11 +50,16 @@ function myFunction() {
   }
 
 
+
+  //COde for starts
+
+
   /*Downloaded from https://www.codeseek.co/ovdojoey/css-gift-opening-pgozGX  for suprise box*/
 
 var to = 'Suprise!';
 var gift_url = 'http://www.amazon.com/gp/product/B00X4WHP5E/ref=ods_xs_ae_shurl?tag=googhydr-20&hvadid=74652194316&hvpos=1t1&hvexid=&hvnetw=g&hvrand=7560558939874219351&hvpone=&hvptwo=&hvqmt=b&hvdev=c&ref=pd_sl_2vatdqwe3p_b';
 var gift_image_url = 'om.jpeg';
+var gift_image_array = ['om.jpeg',"pooja.jpg"]
 
 
 
@@ -64,8 +68,7 @@ var present = document.getElementById("present");
 var presentImage = document.getElementById("present-image");
 
 
-function init() {
-  
+function init() {  
   var _giftLink, 
       _giftImg;
   
@@ -78,7 +81,9 @@ function init() {
   
   if (gift_image_url) {
     _giftImg = document.createElement("img");
-    _giftImg.src = gift_image_url;
+    _giftImg.src = gift_image_array[0];
+    _giftImg.height = "10%"
+
     if(_giftLink) {
       _giftLink.appendChild(_giftImg);
     } else {
